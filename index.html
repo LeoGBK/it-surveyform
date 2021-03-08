@@ -11,29 +11,40 @@
     </header>
     <section>
         <form id="survey-form">
-            <!-- First three fields -->
-            <label for="name" id="name-label">
-                Name: <input type="text" id="name" placeholder="Type your name here">
-            </label>
-            <label for="email" id="email-label">
-                Email: <input type="email" id="email" placeholder="Enter your email address">
-            </label>
-            <label for="number" id="number-label">
-                Age: <input type="number" id="number" min="18" max="65" placeholder="Age">
-            </label>
+            <!-- First three fields structures -->
+            <!-- Name input -->
+            <div class="form-shape">
+                <label for="name" id="name-label">
+                    Name: <input type="text" id="name" placeholder="Type your name here">
+                </label>
+            </div>
+            <!-- Email input -->
+            <div class="form-shape">
+                <label for="email" id="email-label">
+                    Email: <input type="email" id="email" placeholder="Enter your email address">
+                </label>
+            </div>
+            <!-- Number input -->
+            <div class="form-shape">
+                <label for="number" id="number-label">
+                    Age: <input type="number" id="number" min="18" max="65" placeholder="Age">
+                </label>
+            </div>
             <!-- Dropdown structure -->
-            <label for="dropdown-label">
-                Which area of IT are you involved?
-                <select name="itarea" id="dropdown-label">
-                    <option value="database">DB Management</option>
-                    <option value="support">IT Support</option>
-                    <option value="coding">Software Development / Coding</option>
-                    <option value="network">Network Management</option>
-                    <option value="cybersecurity">Cybersecurity</option>
-                </select>
-            </label>
+            <div class="form-shape">
+                <label for="dropdown-label">
+                    Which area of IT are you involved?
+                    <select name="itarea" id="dropdown-label">
+                        <option value="database">DB Management</option>
+                        <option value="support">IT Support</option>
+                        <option value="coding">Software Development / Coding</option>
+                        <option value="network">Network Management</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                    </select>
+                </label>
+            </div>
             <!-- Radio buttons structure -->
-            <div>
+            <div class="form-shape">
                 <p>Select the level of experience you have:</p>
                 <label for="intern">
                     <input type="radio" id="intern" name="experience" value="intern">Intern
@@ -49,7 +60,7 @@
                 </label>
             </div>
             <!-- Checkboxes structure -->
-            <div>
+            <div class="form-shape">
                 <p>What language would you like to learn in a course?</p>
                 <label for="html">
                     <input type="checkbox" id="html" name="language" value="html">HTML
@@ -74,12 +85,14 @@
                 </label>
             </div>
             <!-- Textarea structure -->
-            <div>
+            <div class="form-shape">
                 <p>Please, feel free to send us your comments or suggestions:</p>
                 <textarea name="commentarios" id="comments" cols="30" rows="10" placeholder="Enter a comment here...">
                 </textarea>
             </div>
-            <button type="submit">Submit:</button>
+            <div class="form-shape">
+                <button type="submit">Submit:</button>
+            </div>
         </form>
     </section>
     <footer></footer>
