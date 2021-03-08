@@ -71,6 +71,7 @@ input, select {
 
 textarea {
     width: 100%;
+    font-size: 20px;
 }
 
 button {
@@ -81,3 +82,9 @@ button {
     background: cyan;
     cursor: pointer;
 }
+
+footer {
+    background-color: #333435;
+    text-align: center;
+    opacity: 80%;
+  }
